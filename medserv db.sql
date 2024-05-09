@@ -5,20 +5,6 @@ CREATE TABLE USER_TYPE (
     name_type VARCHAR(255) NOT NULL,
     desc_type VARCHAR(255) NOT NULL
 );
-
--- Definición de tabla ACHIEVEMENT (tabla independiente)
-CREATE TABLE ACHIEVEMENT (
-    id_achievement INTEGER PRIMARY KEY AUTO_INCREMENT,
-    name_achievement VARCHAR(255) NOT NULL,
-    desc_achievement VARCHAR(255) NOT NULL
-);
-
--- Definición de tabla DIFFICULTY (tabla independiente)
-CREATE TABLE DIFFICULTY(
-	id_difficulty INTEGER PRIMARY KEY AUTO_INCREMENT,
-	desc_difficulty VARCHAR(20) UNIQUE not null
-);
-
 -- Definición de tabla USER (depende de USER_TYPE)
 CREATE TABLE `USER` (
     id_user INTEGER PRIMARY KEY AUTO_INCREMENT,
